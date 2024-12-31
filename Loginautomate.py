@@ -11,6 +11,7 @@ try:
     driver.find_element(By.NAME,"password").send_keys("12345")
     driver.find_element(By.ID,"login_button").click()
     actualtitle=driver.title
+    
     time.sleep(1)
 
     if actualtitle=="Dashboard":
